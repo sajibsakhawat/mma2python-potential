@@ -16,24 +16,18 @@ It automatically generates:
 
 The output is a numerically stable NumPy implementation.
 
-# Structure
-mma2python-potential/
+# mathematica-potential-translator/
 │
-├── generator/
-│   └── generate_potential.py
+├ generate_potential.py
+├ README.md
 │
-├── examples/
-│   ├── single_field_example.m
-│   ├── multifield_example.m
-│   └── generated_example.py
+├ examples/
+│   ├ single_field_thermal.m
+│   ├ two_field_thermal.m
+│   ├ higgs_singlet.m
 │
-├── tests/
-│   └── test_translation.py
-│
-├── README.md
-├── requirements.txt
-├── LICENSE
-└── .gitignore
+└ generated/
+    └ potential_nd.py
 
 
 #  Installation
@@ -45,3 +39,15 @@ pip install -r requirements.txt
 # requirements.txt
 sympy
 numpy
+
+# Example usage 
+
+Mathematica DR calculation
+          ↓
+Mathematica potential V(...)
+          ↓
+Translator
+          ↓
+Python potential
+          ↓
+Bounce solver / GW calculation
