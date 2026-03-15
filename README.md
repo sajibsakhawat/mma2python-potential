@@ -17,18 +17,23 @@ It automatically generates:
 The output is a numerically stable NumPy implementation.
 
 # mathematica-potential-translator/
-│
-├ generate_potential.py
-├ README.md
-│
-├ examples/
-│   ├ single_field_thermal.m
-│   ├ two_field_thermal.m
-│   ├ higgs_singlet.m
-│
-└ generated/
-    └ potential_nd.py
+## Project Structure
 
+```
+mathematica-potential-translator/
+│
+├── generate_potential.py
+├── README.md
+├── requirements.txt
+│
+├── examples/
+│   ├── single_field_thermal.m
+│   ├── two_field_thermal.m
+│   └── higgs_singlet.m
+│
+└── generated/
+    └── potential_nd.py
+```
 
 #  Installation
 
@@ -37,11 +42,12 @@ cd mma2python-potential
 pip install -r requirements.txt
 
 # requirements.txt
+```
 sympy
 numpy
-
+```
 # Example usage 
-
+```
 Mathematica DR calculation
           ↓
 Mathematica potential V(...)
@@ -51,3 +57,4 @@ Translator
 Python potential
           ↓
 Bounce solver / GW calculation
+```
