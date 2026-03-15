@@ -36,11 +36,11 @@ mathematica-potential-translator/
 ```
 
 #  Installation
-
+```
 git clone https://github.com/sajibsakhawat/mma2python-potential
 cd mma2python-potential
 pip install -r requirements.txt
-
+```
 # requirements.txt
 ```
 sympy
